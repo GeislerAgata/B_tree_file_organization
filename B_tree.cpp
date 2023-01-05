@@ -2,6 +2,11 @@
 #include <string>
 using namespace std;
 
+struct Record {
+    int sides[5];             // tablica przechowująca boki pięciokąta  
+    int perimeter;            // obwód pięciokąta - klucz sortowania
+};
+
 struct BTreeNode {
     int n;                    // liczba kluczy
     int* keys;                // tablica kluczy - xi
