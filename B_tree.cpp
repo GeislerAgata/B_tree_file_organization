@@ -207,6 +207,46 @@ void bTreeLoad(BTree* &tree, int t) {                                     // ła
     }
 }
 
+int bTreeKeySeatch() {
+
+}
+
+void bTreeRemove() {
+
+}
+
+void bTreeRemoveFromeNonLeaf() {
+
+}
+
+void bTreeRemoveFromLeaf() {
+
+}
+
+void bTreeMerge() {
+
+}
+
+void bTreeBorrowNext() {
+
+}
+
+void bTreeBorrowPrev() {
+
+}
+
+void bTreeFill() {
+
+}
+
+void bTreeNext() {
+
+}
+
+void bTreePrev() {
+
+}
+
 void freeNode(BTreeNode* node) {                                          // usuwamy kolejne węzły drzewa z pamięci, zaczynając od węzłów najniższych
     int i;
     for (i = 1; i < node->n + 1; i++) {
@@ -214,7 +254,6 @@ void freeNode(BTreeNode* node) {                                          // usu
             freeNode(node->children[i]);
         }
     }
-
     if (node->leaf != true) {
         freeNode(node->children[i]);
     }
